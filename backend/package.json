@@ -1,0 +1,19 @@
+{
+  "name": "arellak-gpt-backend",
+  "version": "1.0.0",
+  "description": "backend for my gpt page",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/app.js"
+  },
+  "author": "arellak",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "better-sqlite3": "^8.4.0",
+    "fastify": "^4.17.0",
+    "openai": "^3.2.1",
+    "quick.db": "^9.1.6"
+  }
+}

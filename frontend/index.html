@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>arellaks gpt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="apiContainer">
+    <input type="password" class="apiInput" spellcheck="false" rows="1" placeholder="API Key" />
+    <button onclick="setAPIKey()" class="apiButton">Set API Key</button>
+  </div>
+  <div class="outputDiv" style="display: none;"></div>
+  <div class="main-container" style="display: none;">
+    <input type="text" class="input" spellcheck="false" rows="1" placeholder="Send a message..."></input>
+    <div class="button-container">
+      <button onclick="generate()" class="generateButton">Generate</button>
+      <button onclick="resetSession()" class="reset">Reset</button>
+      <button onclick="logout()" class="logoutButton">Logout</button>
+    </div>
+  </div>
+  <script type="text/javascript" src="src/index.js"></script>
+</body>
+</html>
