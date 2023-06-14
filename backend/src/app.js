@@ -1,6 +1,8 @@
 // @ts-nocheck
 import Fastify from "fastify";
 import cors from "@fastify/cors";
+import { Configuration, OpenAIApi }  from "openai";
+
 import { config } from "../config/config.js";
 
 import { validateKey } from "./apiKey.js";
@@ -9,8 +11,6 @@ const fastify = Fastify({ logger: true });
 await fastify.register(cors, {
   origin: "*"
 });
-
-import { Configuration, OpenAIApi }  from "openai";
 
 const configuration = new Configuration({
   organization: config.openai.orga,
