@@ -12,7 +12,7 @@
   "dependencies": {
     "@fastify/cors": "^8.3.0",
     "better-sqlite3": "^8.4.0",
-    "fastify": "^4.28.1",
+    "fastify": "^5.7.3",
     "openai": "^5.20.3",
     "quick.db": "^9.1.6"
   }
